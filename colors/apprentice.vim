@@ -118,7 +118,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   endif
 
   hi ColorColumn      ctermbg=234  ctermfg=NONE guibg=#1c1c1c guifg=NONE    cterm=NONE           gui=NONE
-||||||| merged common ancestors
   hi Visual           ctermbg=235  ctermfg=110  guibg=#262626 guifg=#8fafd7 cterm=reverse        gui=reverse
   hi VisualNOS        ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline      gui=underline
 

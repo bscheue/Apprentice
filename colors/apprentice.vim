@@ -97,7 +97,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   hi VertSplit        ctermbg=238  ctermfg=238  guibg=#444444 guifg=#444444 cterm=NONE           gui=NONE
   hi WildMenu         ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#262626 cterm=NONE           gui=NONE
 
-  hi Function         ctermbg=NONE ctermfg=229  guibg=NONE    guifg=#ffffaf cterm=NONE           gui=NONE
+  hi Function         ctermbg=NONE ctermfg=darkCyan  guibg=NONE    guifg=#ffffaf cterm=NONE           gui=NONE
   hi SpecialKey       ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
   hi Title            ctermbg=NONE ctermfg=231  guibg=NONE    guifg=#ffffff cterm=NONE           gui=NONE
 
@@ -263,6 +263,9 @@ hi link diffNoEOL WarningMsg
 hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
 hi link diffAdded String
+
+syn match myTodo contained "\<NOTE\>"
+hi! link myTodo Todo
 
 let g:terminal_ansi_colors = [
             \ '#1c1c1c',

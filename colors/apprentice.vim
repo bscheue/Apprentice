@@ -264,9 +264,6 @@ hi link diffOnly WarningMsg
 hi link diffRemoved WarningMsg
 hi link diffAdded String
 
-syn match myTodo contained "\<NOTE\>"
-hi! link myTodo Todo
-
 let g:terminal_ansi_colors = [
             \ '#1c1c1c',
             \ '#af5f5f',
